@@ -1,0 +1,130 @@
+:root
+{
+    font: 18px Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    margin-top: 0;
+}
+
+label
+{
+    cursor: pointer;
+}
+
+input
+{
+    display: none;
+}
+
+input:not(:checked) ~ main .full-discription
+{
+    display: none;
+}
+
+input:checked ~ main article
+{
+    display: block;
+    width: 50%;
+    height: 50%;
+
+    margin: 8px auto;
+}
+
+input:not(:checked) ~ main article:hover
+{
+    box-shadow: 0 0 8px;
+    transform: scale(1.03);
+}
+
+input:not(:checked) ~ main article:hover img
+{
+    transform: scale(1.1);
+}
+
+header
+{
+    margin: 0 -8px 8px;
+    padding: 20px;
+    text-align: center;
+
+    background-color: #601753;
+    color: white;
+
+    transition: all .5s;
+}
+
+h1
+{
+    transition: .2s;
+    cursor: default;
+}
+
+header:hover
+{
+    background-color: #852475;
+}
+
+header:hover h1
+{
+    transform: scale(2.0);
+}
+
+main
+{
+    text-align: center;
+}
+
+article
+{
+    display: inline-block;
+    width: 300px;
+    height: 450px;
+    vertical-align: top;
+
+    margin: 8px;
+    border: 2px solid darkslategrey;
+    border-radius: 8px;
+
+    transition: all .2s ease-in-out;
+    overflow: hidden;
+}
+
+article img
+{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+
+    transition: all .2s ease-in-out;
+}
+
+h2
+{
+    margin-left: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    transition: .2s;
+}
+
+h2:hover
+{
+    color: #852475;
+}
+
+p
+{
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #332935;
+}
+
+.small-discription
+{
+    text-align: left;
+    line-height: 1.3;
+}
