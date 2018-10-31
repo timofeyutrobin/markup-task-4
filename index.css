@@ -68,7 +68,7 @@ header:hover
 
 header:hover h1
 {
-    transform: scale(2.0);
+    transform: scale(2);
 }
 
 main
